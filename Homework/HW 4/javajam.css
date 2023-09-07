@@ -9,6 +9,14 @@ header {
     background-color: #D2B48C;
     text-align: center;
 }
+
+#wrapper {
+    background-color: #FEFAEB;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 h1 {
     line-height: 200%;
 }
