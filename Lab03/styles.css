@@ -1,4 +1,72 @@
+/* site-wide changes */
 body {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(200, 168, 101);
+    color: black;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* header changes */
+header {
+    background-color: rgb(195, 221, 103);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* nav bar font and color changes */
+nav {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+/* unclicked <a> tag color */
+a:link {
+    color: green;
+}
+
+/* clicked <a> tag color */
+a:visited {
+    color: black;
+}
+
+/* <a> tag hover changes */
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+/* changes to lists located in body of about me page */
+.about-me-list {
+    color: rgb(33, 90, 51);
+    font-style: italic;
+}
+
+/* padding for text blocks in body */
+#body-text {
+    padding-left: 5px;
+}
+
+/* additional padding for specific paragraph elements in about_me */
+#backstory {
+    padding: 0px 10px 0px 5px;
+}
+
+/* styling, positioning, and padding for content in the body */
+#wrapper {
+    background-color: antiquewhite;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* border for images that blends with background */
+img {
+    border: 1px solid rgb(200, 168, 101);
+}
+
+/* color and font changes to footer */
+footer {
+    background-color: rgb(195, 221, 103);
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
 }
