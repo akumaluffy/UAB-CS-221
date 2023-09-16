@@ -1,0 +1,35 @@
+body {
+    background-color: #ffffff;
+    color: #221811;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+main {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: lightblue;
+}
+
+header {
+    background-color: rgb(174, 168, 168);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: solid;
+}
+
+footer {
+    background-color: rgb(171, 92, 171);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+p {
+    padding: 1em 1em 1em 1em;
+}
