@@ -1,0 +1,77 @@
+/* wildcard element settings for site */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+Generic flex container for single element (grid container)
+Sets container to fill viewport and centers elements
+*/
+.flex_container {
+    background-color: rgb(140, 183, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*
+bg color for each element in flex container
+*/
+.flex_container > div {
+    background-color: rgb(152, 232, 118);
+}
+
+/*
+grid container dimensions and gaps
+*/
+.grid_container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+/*
+setting grid location and bg color for each grid item
+*/
+.item-1 {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    background-color: rgb(253, 136, 242);
+}
+
+.item-2{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: rgb(242, 242, 119)
+}
+
+.item-3{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-color: rgb(255, 165, 55)
+}
+
+.item-4{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color:rgb(212, 136, 253)
+}
+
+.item-5 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: rgb(254, 140, 140);
+}
+
+.item-6{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: white;
+}
