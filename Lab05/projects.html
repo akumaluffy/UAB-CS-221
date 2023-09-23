@@ -7,45 +7,70 @@
     </title>
     <link rel="stylesheet"href="styles.css">
 </head>
+
+<!-- div for body to wrap in different style -->
 <body><div id="wrapper">
     <header>
-        <h1>
-            Yang (Jason) Liu
-        </h1>
+    <!-- set nav bar as header -->
+    <!-- nav bar links to other portfolio pages as unique grid-box items -->
+    <nav><div class="nav-gridcontainer">
+        <div class="nav-grid nav-1">
+            <a href="home_page.html">Home</a>
+        &nbsp; &nbsp;</div>
+        <div class="nav-grid nav-2">
+            <a href="projects.html">Projects</a>
+            &nbsp; &nbsp;</div>
+    </div></nav>
     </header>
-    <nav>
-        <a href="index.html"><b>Home</b>
-        </a> &nbsp; &nbsp;
-        <a href="about_me.html"><b>About Me</b>
-        </a> &nbsp; &nbsp;
-        <a href="projects.html"><b>Projects</b>
-        </a> &nbsp; &nbsp;
-        <a href="contact_information.html"><b>Contact Information</b>
-        </a> &nbsp; &nbsp;
-    </nav>
-    <div id="body-text">
+
+    <!-- Project page title as h1 element / flexbox -->
+    <h1 class="title-flex">
+        Projects
+    </h1>
+
+
+    <div id="projects-flex">
     <h2>
-        Project List
+        Github Repositories
     </h2>
+
+    <!-- Each header + link is a flexbox item -->
     <h3>
-        Github Repo
+        CS221 Web Development
     </h3>
-    <ul>
-        <li>
-            <a href="https://github.com/akumaluffy/UAB-CS-221.git">
-                https://github.com/akumaluffy/UAB-CS-221.git
-            </a>
-        </li>
-    </ul>
+    <a href="https://github.com/akumaluffy/UAB-CS-221.git">
+        https://github.com/akumaluffy/UAB-CS-221.git
+    </a>
+
+    <!-- Filler content for site styling for class, to be changed in future when more projects / repos created-->
+    <h3>
+        Filler Class 1
+    </h3>
+    <p>This is a filler link</p>
+
+    <h3>
+        Filler Class 3
+    </h3>
+    <p>This is a filler link</p>
+
     </div>
 
+    <!-- contact + copyright as footer, reduces extra page  -->
     <footer>
-        <small><i>
-            Copyright © 2023 Yang Liu
-            <br>
-            <a href="mailto:jason@liu.com">Jason@Liu.com</a>
-        </i></small>
-    </footer>
+        <!-- div for contact info and copyright for more visual appeal -->
+            <div class="contact info">
+                <h4>
+                    Contact me:
+                </h4>
+                Phone: 123-456-7890
+                <br>
+                Email: 
+                <a href="mailto:jason@liu.com">Jason@Liu.com</a>
+            </div>
+            <div class="copyright"><small><i>
+                Copyright © 2023 Yang Liu
+            </i></small></div>
+        </footer>
 </div></body>
 
 </html>
