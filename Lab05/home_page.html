@@ -9,19 +9,20 @@
     <link rel="stylesheet"href="styles.css">
 </head>
 
-<!-- div for body to wrap in different style -->
+<!-- div for body to wrap in different style, space between each flexbox item -->
 <body><div id="wrapper">
+
     <header>
     <!-- set nav bar as header -->
     <!-- nav bar links to other portfolio pages as unique grid-box items -->
-    <nav><div class="nav-gridcontainer">
+    <nav class="nav-gridcontainer">
         <div class="nav-grid nav-1">
             <a href="home_page.html">Home</a>
         &nbsp; &nbsp;</div>
         <div class="nav-grid nav-2">
             <a href="projects.html">Projects</a>
             &nbsp; &nbsp;</div>
-    </div></nav>
+    </nav>
     </header>
 
     <!-- Name as h1 element -->
@@ -30,46 +31,49 @@
     </h1>
 
     <!-- div for About Me flexbox -->
-    <div id="about-me-flex">
-    <h2>
+    <div class="about-me-flex">
+    <h2 class="about-me-1">
         About Me
     </h2>
-    <p id="backstory">
+    <p class="about-me-2">
         I was a pre-med in college and graduated with B.S. in psychology. During undergrad I worked in clinical research for 4 years focusing on effects of childhood abuse on obesity. The Covid pandemic began during my gap year after graduating, and it was during that time I decided to drop medical school and commit myself to working within the intersection between technology and medicine. I am currently in school to obtain a Computer Science Master's Degree at UAB. My goal is to help integrate new A.I. technologies with medicine.
     </p></div>
 
-    <!-- div for hobbies flexbox, 1 item grid container -->
+    <!-- div for hobbies flexitem, 1 item grid container -->
     <div class="hobby-flex">
-    <!-- div for hobby grid container-->
-    <div class="hobby-grid">
     <h3 class="hobby-item hobby-1">
         Hobbies
     </h3>
     <!-- hobbies as grid items -->
     <div class="hobby-item hobby-2">DJing</div>
-    <div class="hobby-item hobby-3">Hiking</div>
+    <div class="hobby-item hobby-3">
+        Hiking
+    <!-- *how do i make hiking text appear above image?* -->
+        <img src="hiking.jpeg" alt="Hiking"
+        width=70%
+        height=70%/>
+    </div>
     <div class="hobby-item hobby-4">Video Games</div>
-    </div></div>
+    </div>
 
-    <!-- div for interests flexbox -->
-    <div class="interest-flex">
-    <!-- div for interests grid container -->
-    <div class="interests-grid">
-    <h3 class="interests-item interest-1">
+    <!-- div for interests flexitem, 1 item grid container -->
+    <div class="interests-flex">
+    <h3 class="interests-item interests-1">
         Interests
     </h3>
     <!-- interests as grid items -->
-    <div class="interests-item interest2">Making Coffee</div>
-    <div class="interests-item interest3">Music Production</div>
-    </div></div>
+    <div class="interests-item interests-2">Making Coffee</div>
+    <div class="interests-item interests-3">Music Production</div>
+    </div>
 
     <!-- contact + copyright as footer, reduces extra page  -->
     <footer>
     <!-- div for contact info and copyright for more visual appeal -->
-        <div class="contact info">
-            <h4>
+        <div class="contact-info">
+            <b>
                 Contact me:
-            </h4>
+            </b>
+            <br>
             Phone: 123-456-7890
             <br>
             Email: 

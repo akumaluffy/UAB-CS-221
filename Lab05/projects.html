@@ -8,8 +8,9 @@
     <link rel="stylesheet"href="styles.css">
 </head>
 
-<!-- div for body to wrap in different style -->
+<!-- div for body to wrap in different style, spaces between each flexbox element-->
 <body><div id="wrapper">
+
     <header>
     <!-- set nav bar as header -->
     <!-- nav bar links to other portfolio pages as unique grid-box items -->
@@ -28,40 +29,39 @@
         Projects
     </h1>
 
-
-    <div id="projects-flex">
-    <h2>
+    <h2 class="h2-projects">
         Github Repositories
     </h2>
 
-    <!-- Each header + link is a flexbox item -->
-    <h3>
+    <!-- Each header + link is a grid container item -->
+    <div class="projects-flex">
+    <h3 class="projects-item projects-1">
         CS221 Web Development
     </h3>
-    <a href="https://github.com/akumaluffy/UAB-CS-221.git">
+    <a href="https://github.com/akumaluffy/UAB-CS-221.git" class="projects-item projects-2">
         https://github.com/akumaluffy/UAB-CS-221.git
     </a>
 
     <!-- Filler content for site styling for class, to be changed in future when more projects / repos created-->
-    <h3>
+    <h3 class="projects-item projects-3">
         Filler Class 1
     </h3>
-    <p>This is a filler link</p>
+    <p class="projects-item projects-4">This is a filler link</p>
 
-    <h3>
-        Filler Class 3
+    <h3 class="projects-item projects-5">
+        Filler Class 2
     </h3>
-    <p>This is a filler link</p>
-
+    <p class="projects-item projects-6">This is a filler link</p>
     </div>
 
     <!-- contact + copyright as footer, reduces extra page  -->
     <footer>
         <!-- div for contact info and copyright for more visual appeal -->
-            <div class="contact info">
-                <h4>
+            <div class="contact-info">
+                <b>
                     Contact me:
-                </h4>
+                </b>
+                <br>
                 Phone: 123-456-7890
                 <br>
                 Email: 
