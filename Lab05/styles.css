@@ -231,9 +231,9 @@ footer {
     font-size: 0.6em;
     font-style: italic;
 
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     border-top: solid;
     width: 100%;
 
