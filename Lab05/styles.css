@@ -18,11 +18,12 @@ body {
 #wrapper {
     background-color: antiquewhite;
     width: 100vh;
+    height: 100vh;
     margin: auto;
+    border: 1px solid black;
 
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 /* header changes */
