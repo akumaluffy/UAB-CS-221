@@ -232,7 +232,7 @@ footer {
     font-size: 0.6em;
     font-style: italic;
 
-    position: static;
+    /* position: sticky; */
     left: 0;
     bottom: 0;
     border-top: solid;
