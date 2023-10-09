@@ -122,6 +122,7 @@ h3 {
     gap: 15px;
 }
 
+/* styling for all grid items in hobby */
 .hobby-item {
     display: flex;
 
@@ -190,6 +191,7 @@ hobby-1 is title element */
     gap: 15px;
 }
 
+/* styling for all grid items in interests */
 .interests-item {
     display: flex;
 
@@ -367,6 +369,7 @@ footer {
     grid-column: 3/4;
 }
 
+/* MEDIA QUERY CHANGES */ 
 @media (max-width:480px) {
 
     /* SITE WIDE + MAIN PAGE CHANGES */
