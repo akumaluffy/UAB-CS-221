@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head element + link to css -->
+<!-- added meta info -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
+    <title>
+        Yang Liu - about me
+    </title>
+    <link rel="stylesheet"href="styles.css">
+</head>
+
+<!-- div for body to wrap in different style, space between each flexbox item -->
+<body>
+
+    <header>
+    <!-- set nav bar as header -->
+    <!-- nav bar links to other portfolio pages as unique grid-box items -->
+    <nav class="nav-gridcontainer">
+        <div class="nav-grid nav-1">
+            <a href="home_page.html">Home</a>
+        &nbsp; &nbsp;</div>
+        <div class="nav-grid nav-2">
+            <a href="projects.html">Projects</a>
+            &nbsp; &nbsp;</div>
+    </nav>
+    </header>
+
+    <!-- Name as h1 element -->
+    <h1 class="title-flex">
+        Yang (Jason) Liu
+    </h1>
+
+    <!-- div for About Me flexbox -->
+    <div class="about-me-flex">
+    <h2 class="about-me-1">
+        About Me
+    </h2>
+    <p class="about-me-2">
+        I was a pre-med in college and graduated with B.S. in psychology. During undergrad I worked in clinical research for 4 years focusing on effects of childhood abuse on obesity. The Covid pandemic began during my gap year after graduating, and it was during that time I decided to drop medical school and commit myself to working within the intersection between technology and medicine. I am currently in school to obtain a Computer Science Master's Degree at UAB. My goal is to help integrate new A.I. technologies with medicine.
+    </p></div>
+
+    <!-- div for hobbies flexitem, 1 item grid container -->
+    <div class="hobby-flex">
+    <h3 class="hobby-item hobby-1">
+        Hobbies
+    </h3>
+    <!-- hobbies as grid items -->
+    <div class="hobby-item hobby-2">DJing</div>
+    <div class="hobby-item hobby-3">
+        Hiking
+    </div>
+    <div class="hobby-item hobby-4">Video Games</div>
+    </div>
+
+    <!-- div for interests flexitem, 1 item grid container -->
+    <div class="interests-flex">
+    <h3 class="interests-item interests-1">
+        Interests
+    </h3>
+    <!-- interests as grid items -->
+    <div class="interests-item interests-2">Making Coffee</div>
+    <div class="interests-item interests-3">Music Production</div>
+    </div>
+
+    <!-- contact + copyright as footer, reduces extra page  -->
+    <footer>
+    <!-- div for contact info and copyright for more visual appeal -->
+        <div class="contact-info">
+            <b>
+                Contact me:
+            </b>
+            <br>
+            Phone: 123-456-7890
+            <br>
+            <!-- email form -->
+            Email:
+            <a href="mailto:jason@liu.com">Jason@Liu.com</a>
+        </div>
+        <!-- new div class so 3 containers for footer -->
+        <div class="email-box">
+            <form action="https://formsubmit.co/jason@liu.com" method="POST">
+                Name: <input type="name" name="name" required>
+                <br>
+                Email: <input type="email" name="email" required> 
+                <br>
+                Message: <input type="text" name="text" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="copyright"><small><i>
+            Copyright © 2023 Yang Liu
+        </i></small></div>
+    </footer>
+</body>
+
+</html>

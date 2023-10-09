@@ -1,0 +1,508 @@
+/* padding margin and box-sizing for every el */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN PAGE AND SITE WIDE CHANGES */
+
+/* site-wide changes */
+
+/* styling for body, removed wrapper because it was messing everything up */
+body {
+    background-color: antiquewhite;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* unclicked <a> tag color */
+a:link {
+    color: green;
+}
+/* clicked <a> tag color */
+a:visited {
+    color: rgb(41, 48, 105);
+}
+/* <a> tag hover changes */
+a:hover {
+    color: rgb(0, 187, 177);
+    text-decoration: none;
+}
+
+/* header changes */
+header {
+    background-color: rgb(200, 168, 101);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/*
+nav bar font and color changes
+turn nav bar into grid container - currently 2 items
+*/
+.nav-gridcontainer {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 40px;
+}
+
+/* nav-grid item changes */
+.nav-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 221, 103);
+}
+.nav-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 221, 103);
+}
+
+/* padding and text-align for content header */
+.title-flex {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* changes text color and italicizes all h2 elements */
+h2 {
+    color: rgb(33, 90, 51);
+    font-style: italic;
+}
+
+/* applies grid-container to content in me flex item on home page */
+.about-me-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+/* changes grid items in about-me grid-container
+about-me-1 is title element */
+.about-me-1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5px
+}
+
+.about-me-2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+/* changes text color and italicizes all h3 elements */
+h3 {
+    color: rgb(33, 90, 51);
+    font-style: italic;
+}
+
+/* turn hobbies flex-item into grid-container */
+.hobby-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.hobby-item {
+    display: flex;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+/* positions and applies styling to each grid element
+hobby-1 is title element */
+.hobby-1 {
+    justify-content: left;
+    align-items: center;
+    padding-left: 5px;
+
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.hobby-2 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+    height: 300px;
+    max-width: 300px;
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+/* removed images in html and turned them into grid item backgrounds to make images more responsive */
+.hobby-3 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+    height: 300px;
+    max-width: 300px;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    background-image: url("hiking.jpeg");
+}
+
+.hobby-4 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+    height: 300px;
+    max-width: 300px;
+
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+/* turn interests flex-item into grid container */
+.interests-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.interests-item {
+    display: flex;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+/* positions and applies styling to each interests element
+interests-1 is title element */
+.interests-1{
+    justify-content: left;
+    align-items: center;
+    padding-left: 5px;
+
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.interests-2 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+    height: 300px;
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.interests-3 {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+    height: 300px;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+/* color and font changes to footer
+applies grid container to footer flex-item element */
+footer {
+    background-color: rgb(195, 221, 103);
+    /* changed fontsize per feedback */
+    font-size: 0.9em;
+    font-style: italic;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: solid;
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+/* reposition and realign text in each footer grid-item */
+.contact-info {
+    padding-left: 5px;
+
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.email-box {
+    display: flex;
+    grid-row: 1/3;
+    grid-column: 2/3;
+
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    padding-right: 5px;
+    
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+/* PROJECTS PAGE SPECIFIC CHANGES */
+
+/* padding for h2 elements on project page */
+.h2-projects {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* turn projects into a 3x2 grid */
+.projects-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    /* width: 900px;
+    height: 200px; */
+
+    gap: 15px;
+}
+
+/* changes for all grid items in projects */
+.projects-item {
+    display: flex;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+/* positions and applies styling to each projects item */
+.projects-1 {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.projects-2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.projects-3 {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.projects-4 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.projects-5 {
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(200, 168, 101);
+    border: 1px solid black;
+
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.projects-6 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+@media (max-width:480px) {
+
+    /* SITE WIDE + MAIN PAGE CHANGES */
+    body {
+        padding-bottom: 0px;
+    }
+
+    /* changing color of header (nav bar) at different resolutions */
+    .nav-1 {
+        background-color: rgb(162, 212, 248);
+    }
+    .nav-2 {
+        background-color: rgb(162, 212, 248);
+    }
+
+    /* change hobby grid container to be 1 column */
+    .hobby-flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+    
+        padding-top: 10px;
+        gap: 15px;
+    }
+
+    .hobby-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .hobby-2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .hobby-3 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .hobby-4 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    /* change interests grid container to 1 column */
+    .interests-flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr;
+        padding-bottom: 20px;
+    }
+
+    .interests-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .interests-2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        max-width: 300px;
+    }
+
+    .interests-3 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        max-width: 300px;
+    }
+
+    /* remove footer sticky turn to static and change to 1 column grid container */
+    footer {
+        position: static;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .contact-info {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    /* also change text alignment for email box */
+    .email-box {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: left;
+        justify-content: left;
+        padding-left: 5px;
+    }
+
+    .copyright {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        padding-left: 5px;
+        padding-top: 20px;
+    }
+
+    /* CHANGES FOR PROJECTS PAGE ONLY */
+    /* turn projects into 1 column grid container */
+    .projects-flex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr;
+        padding-bottom: 20px;
+    }
+
+    .projects-item {
+        max-width: 300px;
+    }
+
+    /* change ordering for link + content for mobile devices */
+    .projects-1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .projects-2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .projects-3 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .projects-4 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .projects-5 {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+
+    .projects-6 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+}
