@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- basic head and meta code-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>
+        Yang Liu - HW8
+    </title>
+    <link rel="stylesheet"href="yliu0602.hw8.css">
+
+    <!-- javascript code for assignment -->
+    <script>
+        let grade = Number(prompt("Enter the student's numeric grade: "))
+        // error handling
+        while (grade < 0 || grade > 100) {
+            grade = Number(prompt("Please enter in a valid grade: "))
+        }
+        if (grade >= 90) {
+            console.log(`Grade: ${grade}\nLetter Grade: A\nReward: Candy`)
+        }
+        else if (grade >= 80) {
+            console.log(`Grade: ${grade}\nLetter Grade: B\nReward: Apple`)
+        }
+        else if (grade >= 70) {
+            console.log(`Grade: ${grade}\nLetter Grade: C\nReward: Mint`)
+        }
+        else if (grade >= 60) {
+            console.log(`Grade: ${grade}\nLetter Grade: D\nReward: Pencil`)
+        }
+        else {
+            console.log(`Grade: ${grade}\nLetter Grade: F\nReward: Awkward conversation with parents`)
+        }
+    </script>
+</head>
+
+<!-- body -->
+<body>
+    <header>
+        This is a header for the body of homework 8 javascript
+    </header>
+    <footer>
+        This is a footer
+    </footer>
+</body>
+
+</html>
