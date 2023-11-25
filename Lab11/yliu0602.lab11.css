@@ -1,0 +1,35 @@
+/* useful variables */
+:root {
+    --bg_color: rgb(231, 226, 187);
+    --secondary_color: rgb(142, 218, 156);
+}
+
+/* general styling for entire document */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    color: black;
+}
+
+body {
+    background-color: var(--bg_color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--secondary_color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 600px;
+
+    border-radius: 60%;
+}
+
