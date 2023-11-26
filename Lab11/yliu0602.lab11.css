@@ -33,3 +33,37 @@ h1 {
     border-radius: 60%;
 }
 
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+} */
+
+.search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#search-box {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 {
+    font-size: 30px;
+    margin-top: 25px;
+}
