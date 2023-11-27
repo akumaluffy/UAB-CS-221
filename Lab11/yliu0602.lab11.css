@@ -2,6 +2,7 @@
 :root {
     --bg_color: rgb(231, 226, 187);
     --secondary_color: rgb(142, 218, 156);
+    --tertiary_color: rgb(160, 209, 169);
 }
 
 /* general styling for entire document */
@@ -13,16 +14,19 @@
     color: black;
 }
 
+/* change background color of body */
 body {
     background-color: var(--bg_color);
 }
 
+/* turn the header into flex to center content */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* styling for the h1 element with title of website */
 h1 {
     text-align: center;
     background-color: var(--secondary_color);
@@ -33,14 +37,7 @@ h1 {
     border-radius: 60%;
 }
 
-/* main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
-} */
-
+/* styling for entire search field including input field and search button */
 .search-field {
     display: flex;
     justify-content: center;
@@ -49,21 +46,33 @@ h1 {
     flex-direction: column;
 }
 
+/* input field specific changes */
 #search-box {
     width: 200px;
     height: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     text-align: center;
 }
 
+/* styling for books list */
 .book-list {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.b1 {
+    flex-direction: column;
+}
+/* styling for header of the book list */
+.b-header {
     font-size: 30px;
     margin-top: 25px;
+}
+
+/* styling for all books displayed in the list */
+.books {
+    background-color: var(--tertiary_color);
+    width: 350px;
+    margin-top: 10px;
+    padding: 5px;
 }
